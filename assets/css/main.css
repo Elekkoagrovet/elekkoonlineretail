@@ -32,8 +32,6 @@ body {
   left:0;
   width:100%;
   z-index:1000;
-  flex-wrap:nowrap;
-  overflow:hidden;
 }
 
 /* LOGO */
@@ -42,18 +40,14 @@ body {
   align-items:center; 
   gap:8px; 
   max-width:60%;
-  min-width:0;
 }
 
 #logo img { 
   height:40px; 
-  max-width:100%;
-  flex-shrink:0;
 }
 
 #logo span { 
   font-size:14px; 
-  opacity:0.9; 
   white-space:nowrap;
   overflow:hidden;
   text-overflow:ellipsis;
@@ -70,18 +64,19 @@ body {
   text-decoration:none; 
   color:white; 
   font-weight:600; 
-  transition:0.3s; 
 }
 
 #nav a:hover { color:#ff4b4b; }
 
+/* HAMBURGER */
 #hamburger { 
   display:none; 
   cursor:pointer; 
   font-size:24px; 
+  padding:6px 10px;
 }
 
-/* CART ICON */
+/* CART ICON (UNCHANGED) */
 #cart-icon { 
   background:#ff4b4b; 
   padding:8px 12px;
@@ -157,21 +152,19 @@ body {
   box-shadow:0 10px 25px rgba(0,0,0,0.15); 
 }
 
-/* ✅ REDUCED HEIGHT */
+/* IMAGE */
 .product img { 
   width:100%; 
   height:160px; 
   object-fit:cover;  
-  object-position:center; 
 }
 
-/* ✅ REDUCED PADDING */
+/* CONTENT */
 .product .inner { 
   padding:14px; 
   text-align:center; 
 }
 
-/* ✅ SLIGHTLY SMALLER TEXT */
 .product h2 { 
   color:#0b3d91; 
   margin-bottom:5px; 
@@ -185,7 +178,7 @@ body {
   margin-bottom:10px; 
 }
 
-/* CART PANEL */
+/* ================== CART PANEL (RESTORED EXACTLY) ================== */
 #cart-panel {
   position:fixed; 
   right:-350px; 
@@ -259,7 +252,7 @@ body {
     font-size:12px;
   }
 
-  /* NAV */
+  /* NAV DROPDOWN */
   #nav ul { 
     flex-direction:column; 
     background:#0b3d91; 
@@ -269,18 +262,31 @@ body {
     width:180px; 
     display:none; 
     padding:10px; 
-    border-radius:0 0 0 10px; 
   }
 
-  #nav ul.show { display:flex; }
+  #nav ul.show { 
+    display:flex; 
+  }
 
-  #hamburger { display:block; color:white; }
+  #hamburger { 
+    display:block; 
+    color:white; 
+  }
 
-  .row { gap:12px; }
+  .row { 
+    gap:12px; 
+  }
 
-  /* ✅ 2 COLUMNS */
   .col-4 { 
     width:calc(50% - 12px); 
+  }
+
+  /* BUTTON FIX */
+  .product .button {
+    white-space: nowrap;
+    width: 100%;
+    font-size: 14px;
+    padding: 12px;
   }
 }
 
@@ -304,20 +310,11 @@ body {
     font-size:13px;
   }
 
-  /* ✅ STILL 2 COLUMNS */
   .col-4 { 
     width:calc(50% - 10px); 
   }
 
   .product img {
-    height:150px; /* slightly smaller for tiny screens */
+    height:150px;
   }
-  @media (max-width:768px) {
-  .product .button {
-    white-space: nowrap;
-    width: 100%;
-    font-size: 14px;
-    padding: 12px;
-  }
-}
 }
