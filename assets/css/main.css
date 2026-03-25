@@ -13,12 +13,18 @@ body {
   overflow-x:hidden;
 }
 
+/* WRAPPER FIX */
+#page-wrapper {
+  width:100%;
+  overflow:hidden;
+}
+
 /* HEADER */
 #header {
   display:flex; 
   justify-content:space-between; 
   align-items:center;
-  padding:20px 20px; /* ✅ reduced side padding */
+  padding:20px 20px;
   background:#0b3d91; 
   color:white; 
   position:fixed;
@@ -26,8 +32,7 @@ body {
   left:0;
   width:100%;
   z-index:1000;
-
-  flex-wrap:nowrap; /* ✅ prevents weird wrapping */
+  flex-wrap:nowrap;
   overflow:hidden;
 }
 
@@ -37,7 +42,7 @@ body {
   align-items:center; 
   gap:8px; 
   max-width:60%;
-  min-width:0; /* ✅ VERY IMPORTANT (fix overflow bug) */
+  min-width:0;
 }
 
 #logo img { 
@@ -51,7 +56,7 @@ body {
   opacity:0.9; 
   white-space:nowrap;
   overflow:hidden;
-  text-overflow:ellipsis; /* ✅ trims instead of pushing */
+  text-overflow:ellipsis;
 }
 
 /* NAVIGATION */
@@ -60,15 +65,21 @@ body {
   list-style:none; 
   gap:20px; 
 }
+
 #nav a { 
   text-decoration:none; 
   color:white; 
   font-weight:600; 
   transition:0.3s; 
 }
+
 #nav a:hover { color:#ff4b4b; }
 
-#hamburger { display:none; cursor:pointer; font-size:24px; }
+#hamburger { 
+  display:none; 
+  cursor:pointer; 
+  font-size:24px; 
+}
 
 /* CART ICON */
 #cart-icon { 
@@ -79,6 +90,7 @@ body {
   font-weight:bold; 
   white-space:nowrap;
 }
+
 #cart-icon:hover { background:#d92f2f; }
 
 /* BANNER */
@@ -87,9 +99,18 @@ body {
   color:white; 
   padding:80px 20px; 
 }
+
 #banner { text-align:center; }
-#banner h2 { font-size:36px; margin-bottom:10px; }
-#banner p { font-size:18px; margin-bottom:25px; }
+
+#banner h2 { 
+  font-size:36px; 
+  margin-bottom:10px; 
+}
+
+#banner p { 
+  font-size:18px; 
+  margin-bottom:25px; 
+}
 
 /* BUTTON */
 .button { 
@@ -100,21 +121,27 @@ body {
   font-weight:bold; 
   cursor:pointer;
 }
+
 .button.primary { 
   background:#ff3c3c; 
   color:white; 
 }
+
 .button.primary:hover { background:#d62c2c; }
 
 /* PRODUCTS */
 #features-wrapper { padding:60px 20px; }
+
 .row { 
   display:flex; 
-  gap:30px; 
+  gap:20px; 
   flex-wrap:wrap; 
   justify-content:center; 
 }
-.col-4 { width:300px; }
+
+.col-4 { 
+  width:300px; 
+}
 
 /* PRODUCT CARD */
 .product { 
@@ -124,25 +151,41 @@ body {
   overflow:hidden; 
   transition:0.3s; 
 }
+
 .product:hover { 
   transform:translateY(-6px); 
   box-shadow:0 10px 25px rgba(0,0,0,0.15); 
 }
+
 .product img { 
-  width:70%; 
+  width:100%; 
   height:220px; 
   object-fit:cover;  
-  object-position:60% center; 
+  object-position:center; 
 }
-.product .inner { padding:20px; text-align:center; }
-.product h2 { color:#0b3d91; margin-bottom:5px; }
-.product p { color:#ff3c3c; font-size:18px; font-weight:bold; margin-bottom:15px; }
+
+.product .inner { 
+  padding:20px; 
+  text-align:center; 
+}
+
+.product h2 { 
+  color:#0b3d91; 
+  margin-bottom:5px; 
+}
+
+.product p { 
+  color:#ff3c3c; 
+  font-size:18px; 
+  font-weight:bold; 
+  margin-bottom:15px; 
+}
 
 /* CART PANEL */
 #cart-panel {
   position:fixed; 
   right:-350px; 
-  top: 90px; 
+  top:90px; 
   width:350px; 
   height:calc(100% - 90px);
   background:white; 
@@ -151,12 +194,24 @@ body {
   transition:0.4s; 
   z-index:999;
 }
+
 #cart-panel.open { right:0; }
+
 #cart-panel h3 { color:#0b3d91; }
-#close-cart { cursor:pointer; font-size:18px; color:#ff3c3c; }
+
+#close-cart { 
+  cursor:pointer; 
+  font-size:18px; 
+  color:#ff3c3c; 
+}
 
 /* CART ITEMS */
-#cart-items { margin:15px 0; max-height:300px; overflow:auto; }
+#cart-items { 
+  margin:15px 0; 
+  max-height:300px; 
+  overflow:auto; 
+}
+
 .cart-item { 
   display:flex; 
   justify-content:space-between; 
@@ -178,9 +233,10 @@ body {
   transition:0.4s; 
   z-index:1000;
 }
+
 #toast.show { opacity:1; }
 
-/* ================= MOBILE FIX ================= */
+/* ================= MOBILE ================= */
 @media (max-width:768px) {
 
   #header {
@@ -216,9 +272,12 @@ body {
 
   #hamburger { display:block; color:white; }
 
-  .row { gap:15px; }
+  .row { gap:12px; }
 
-  .col-4 { width:calc(50% - 15px); } 
+  /* ✅ 2 COLUMNS */
+  .col-4 { 
+    width:calc(50% - 12px); 
+  }
 }
 
 /* SMALL PHONES */
@@ -241,5 +300,12 @@ body {
     font-size:13px;
   }
 
-  .col-4 { width:90%; }
+  /* ✅ STILL 2 COLUMNS */
+  .col-4 { 
+    width:calc(50% - 10px); 
+  }
+
+  .product img {
+    height:180px;
+  }
 }
