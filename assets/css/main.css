@@ -115,7 +115,7 @@ body {
 /* BUTTON */
 .button { 
   display:inline-block; 
-  padding:12px 25px; 
+  padding:10px 25px; 
   border-radius:6px; 
   text-decoration:none; 
   font-weight:bold; 
