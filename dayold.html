@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Elekko Agrovet</title>
+<link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+<div id="page-wrapper">
+
+<!-- HEADER -->
+<header id="header" class="container">
+
+<div id="logo">
+<a href="index.html"><img src="images/elekkologo.png" alt="Elekko Agrovet Logo"></a>
+<span>Online Store</span>
+</div>
+
+<!-- NAVIGATION -->
+<nav id="nav">
+<div id="hamburger">&#9776;</div>
+<ul>
+<li class="current"><a href="index.html">Welcome</a></li>
+<li><a href="pharmacy.html">Pharmacy</a></li>
+<li><a href="feed.html">Feed</a></li>
+<li><a href="pet-mart.html">Pet Mart</a></li>
+<li><a href="chemicals.html">Chemicals</a></li>
+ <li><a href="dayold.html">Day Old</a></li>
+</ul>
+</nav>
+
+<!-- CART ICON -->
+<div id="cart-icon">
+🛒 Cart (<span id="cart-count">0</span>)
+</div>
+
+</header>
+
+
+<!-- BANNER -->
+<section id="banner-wrapper">
+<div id="banner" class="box container">
+
+<div class="row">
+
+<div class="col-7 col-12-medium">
+<h2>Quality Agro & Veterinary Products</h2>
+<p>Healthy Animals. Productive Farms.</p>
+<h3>Day old section</h3>
+</div>
+
+<div class="col-5 col-12-medium">
+<a href="#products" class="button primary">Shop Now</a>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- PRODUCTS -->
+<section id="features-wrapper">
+<div class="container" id="products">
+
+<div class="row">
+
+<!-- Agriteddoc -->
+<div class="col-4 col-12-medium">
+<section class="box feature product" data-id="5001" data-name="Agrited" data-price="1270">
+
+<a class="image featured">
+<img src="images/agriteddoc.webp" alt="Agriteddoc">
+</a>
+
+<div class="inner">
+<header>
+<h2>Agrited</h2>
+<p>Available call now for booking</p>
+</header>
+
+<button onclick="window.location.href='tel:+2347053843282';" class="button primary">
+  Call Now
+</button>
+</div>
+
+</section>
+</div>
+
+
+<!-- Sayed Day Old Broiler -->
+<div class="col-4 col-12-medium">
+<section class="box feature product" data-id="5002" data-name="Sayed Day Old Broiler" data-price="1200">
+
+<a class="image featured">
+<img src="images/sayed-dayold-broiler.png" alt="Sayed Day Old Broiler">
+</a>
+<div class="inner">
+<header>
+<h2>Sayed Day Old Broiler</h2>
+<p>Available call now booking</p>
+</header>
+
+<button onclick="window.location.href='tel:+2347053843282';" class="button primary">
+  Call Now
+</button>
+</div>
+
+</section>
+</div>
+
+
+<!-- Tosam Chicks-->
+<div class="col-4 col-12-medium">
+<section class="box feature product" data-id="5003" data-name="Tosam Chicks" data-price="1150">
+
+<a class="image featured">
+<img src="images/tosam-chicks.png" alt="Tosam Chicks">
+</a>
+
+<div class="inner">
+<header>
+<h2>Tosam Chicks</h2>
+<p>₦1,150</p>
+</header>
+
+<button class="button primary add-to-cart">Add To Cart</button>
+</div>
+
+</section>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- CART PANEL -->
+<div id="cart-panel">
+
+<div style="display:flex;justify-content:space-between;align-items:center">
+<h3>Your Cart</h3>
+<span id="close-cart">✖</span>
+</div>
+
+<hr>
+
+<div id="cart-items"></div>
+
+<h4>Total: ₦<span id="cart-total">0</span></h4>
+
+<a href="checkout.html" class="button primary"
+style="width:100%;margin-top:15px;text-align:center">
+Proceed to Checkout
+</a>
+
+</div>
+
+
+<!-- Toast Notification -->
+<div id="toast"></div>
+
+</div>
+
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
