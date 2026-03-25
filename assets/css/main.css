@@ -312,4 +312,12 @@ body {
   .product img {
     height:150px; /* slightly smaller for tiny screens */
   }
+  @media (max-width:768px) {
+  .product .button {
+    white-space: nowrap;
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+  }
+}
 }
