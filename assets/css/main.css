@@ -293,7 +293,7 @@ body {
 /* Mobile view */
 @media (max-width: 500px) {
   iframe {
-    width: 500px;
+    width: 450px;
     height: 300px;
   }
 }
