@@ -290,6 +290,13 @@ body {
     padding: 12px;
   }
 }
+/* Mobile view */
+@media (max-width: 600px) {
+  iframe {
+    width: 350px;
+    height: 300px;
+  }
+}
 
 /* SMALL PHONES */
 @media (max-width:480px) {
