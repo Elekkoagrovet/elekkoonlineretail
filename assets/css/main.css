@@ -18,10 +18,12 @@ body {
   width:100%;
   overflow:hidden;
 }
+
 .social-left img {
   width: 18px;
   height: 18px;
   margin-right: 12px;
+  position:sticky;
 }
 .social-left a:hover {
   transform: scale(1.2);
@@ -298,7 +300,72 @@ body {
   padding-bottom:10px; 
   border-bottom:1px solid #eee; 
 }
+/* FOOTER STYLES */
+.site-footer {
+  background: rgb(235, 235, 6);
+  color:black;
+  padding: 40px 20px 20px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.footer-about, .footer-links, .footer-social {
+  flex: 1 1 200px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #ff4b4b;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-social h4 {
+  margin-bottom: 10px;
+}
+
+.footer-social a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-social a img {
+  width: 28px;  /* icon size */
+  height: 28px;
+  transition: transform 0.2s;
+}
+
+.footer-social a img:hover {
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
 /* TOAST */
 #toast {
   position:fixed; 
