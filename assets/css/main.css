@@ -18,7 +18,11 @@ body {
   width:100%;
   overflow:hidden;
 }
-
+.social-left img {
+  width: 18px;
+  height: 18px;
+  margin-right: 12px;
+}
 /* HEADER */
 #header {
   display:flex; 
