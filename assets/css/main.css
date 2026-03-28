@@ -23,6 +23,10 @@ body {
   height: 18px;
   margin-right: 12px;
 }
+.social-left a:hover {
+  transform: scale(1.2);
+  transition: 0.2s;
+}
 /* HEADER */
 #header {
   display:flex; 
