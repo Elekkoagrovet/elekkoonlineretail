@@ -28,17 +28,6 @@ body {
   margin-right: 10px;
   max-width: 100%;
 }
-table {
-  width: 100%;
-  border-collapse: collapse;
-  table-layout: fixed; /* 🔥 forces equal spacing */
-}
-
-td, th {
-  padding: 8px;
-  font-size: 14px;
-  word-wrap: break-word;
-}
 @media (max-width: 600px) {
 
   table th {
