@@ -18,6 +18,9 @@ body {
   width:100%;
   overflow:hidden;
 }
+
+/* delete button*/
+
 .delete-btn {
   background: red;
   color: white;
