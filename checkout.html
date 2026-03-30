@@ -79,13 +79,7 @@ document.addEventListener("DOMContentLoaded", function(){
         <input type="number" class="quantity-input" data-id="${item.id}" value="${item.quantity}" min="1" style="width:50px; text-align:center;" />
     </td>
     <td>₦${subtotal.toLocaleString()}</td>
-    <td><button class="delete-btn" data-id="${item.id}" style="  background: red;
-  color: white;
-  border: none;
-  padding: 5px 8px;
-  border-radius: 4px;
-  cursor: pointer;
-  max-width: 100%;">Delete</button></td>
+    <td><button class="delete-btn" data-id="${item.id}">Delete</button></td>
 </tr>
             `;
             tbody.appendChild(tr);
