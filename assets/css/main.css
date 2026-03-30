@@ -491,15 +491,4 @@ body {
   .product img {
     height:150px;
   }
-  @media (max-width: 600px) {
-  td:last-child {
-    text-align: right;
-    padding-right: 10px;
-  }
-
-  .delete-btn {
-    font-size: 12px;
-    padding: 5px 8px;
-  }
-}
 }
