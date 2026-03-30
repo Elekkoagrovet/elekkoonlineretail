@@ -207,6 +207,24 @@ body {
 
 .button.primary:hover { background:#d62c2c; }
 
+/* PROMO */
+.promo-box {
+  background: #fffbcc;
+  border: 2px solid #f39c12;
+  padding: 15px;
+  margin-top: 15px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.promo-box img {
+  width: 120px;
+  height: auto;
+}
+
+.promo-box h3 {
+  color: #d35400;
+}
 /* PRODUCTS */
 #features-wrapper { padding:60px 20px; }
 
