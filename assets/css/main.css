@@ -132,23 +132,29 @@ body {
 #cart-icon:hover { background:#d92f2f; }
 
 .seo-marquee {
+  position: relative;
+  width: 100%;
+  height: 50px;
   overflow: hidden;
+  color: #fff;
+  font-size: 1.8em;
+  font-weight: bold;
+  font-family: 'Oleo Script', cursive;
+  display: flex;
+  align-items: center;
 }
 
 .seo-marquee span {
   display: inline-block;
   white-space: nowrap;
-  padding-left: 100%;
-   font-weight: bold;
-  font-size: 1.8em;
-  animation: scrollLeft 15s linear infinite;
+  position: absolute;
+  animation: scrollLeft 10s linear infinite;
 }
 
 @keyframes scrollLeft {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-100%); }
+  0% { transform: translateX(100%); }   /* start off right */
+  100% { transform: translateX(-100%); } /* move to left */
 }
-
 .blog {
   padding: 40px 20px;
   background: #f5f7fb;
