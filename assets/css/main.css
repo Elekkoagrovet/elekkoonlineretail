@@ -332,6 +332,20 @@ body {
   padding: 8px;
   font-size: 13px;
 }
+
+@media (max-width: 600px) {
+  .product.promo img {
+    max-height: 200px;
+  }
+
+  .product.promo h2 {
+    font-size: 14px;
+  }
+
+  .product.promo p {
+    font-size: 13px;
+  }
+}
 /* end of promo height reduction */
 /* PRODUCTS */
 #features-wrapper { padding:60px 20px; }
