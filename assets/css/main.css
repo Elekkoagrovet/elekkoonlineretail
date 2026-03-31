@@ -309,6 +309,30 @@ body {
   font-size: 18px;
   font-weight: bold;
 }
+/* Reduce promo height ONLY */
+.product.promo .inner {
+  padding: 14px; /* was 14px */
+}
+
+.product.promo img {
+  max-height: 285px; /* controls height most */
+}
+
+.product.promo h2 {
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.product.promo p {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.product.promo .button {
+  padding: 8px;
+  font-size: 13px;
+}
+/* end of promo height reduction */
 /* PRODUCTS */
 #features-wrapper { padding:60px 20px; }
 
