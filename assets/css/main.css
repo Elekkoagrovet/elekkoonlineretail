@@ -289,7 +289,7 @@ body {
   background: #ff3c3c;
   color: #fff;
   padding: 5px 12px;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: bold;
   transform: rotate(-15deg);
 }
@@ -339,7 +339,7 @@ body {
   }
 
   .product.promo h2 {
-    font-size: 14px;
+    font-size: 17px;
   }
 
   .product.promo p {
