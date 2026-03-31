@@ -324,13 +324,13 @@ body {
 }
 
 .product.promo p {
-  font-size: 14px;
+  font-size: 12px;
   margin-bottom: 6px;
 }
 
 .product.promo .button {
   padding: 8px;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 @media (max-width: 600px) {
@@ -339,7 +339,7 @@ body {
   }
 
   .product.promo h2 {
-    font-size: 10px;
+    font-size: 14px;
   }
 
   .product.promo p {
