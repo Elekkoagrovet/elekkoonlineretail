@@ -300,7 +300,7 @@ body {
 .old-price {
   text-decoration: line-through;
   color: #999;
-  font-size: 14px;
+  font-size: 12px;
   margin-right: 6px;
 }
 
@@ -339,7 +339,7 @@ body {
   }
 
   .product.promo h2 {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .product.promo p {
