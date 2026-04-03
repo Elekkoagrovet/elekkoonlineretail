@@ -121,7 +121,8 @@ document.addEventListener("click", function(e){
             message += `${item.name} x${item.quantity} - ₦${(item.price*item.quantity).toLocaleString()}%0A`;
         });
         message += `Total: ₦${total.toLocaleString()}`;
-        whatsappBtn.href = `https://wa.me/2349168352621?text=${message}`;
+        whatsappBtn.href = `https://wa.me/234?text=${message}`;
+        //href = `https://wa.me/2349168352621?text=${message}`;
     }
 
     function saveCart(){
