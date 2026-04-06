@@ -614,6 +614,44 @@
     </div>
   </div>
 </section>
+
+<!-- GALLERY -->
+<!-- GALLERY SLIDESHOW -->
+<section class="gallery-section">
+  <div class="container">
+    <h2 class="gallery-title">Farm Gallery</h2>
+
+    <div class="slideshow-container">
+
+      <div class="slide fade">
+        <img src="images/lecture.jpeg" alt="Farm 1">
+      </div>
+
+      <div class="slide fade">
+        <img src="images/flier.jpeg" alt="Farm 2">
+      </div>
+
+  </div>
+</section>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let slides = document.getElementsByClassName("slide");
+
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+
+  slides[slideIndex - 1].style.display = "block";
+
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+</script>
   <!-- TOAST -->
   <div id="toast"></div>
 

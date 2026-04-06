@@ -12,7 +12,37 @@ body {
   padding-top:85px;
   overflow-x:hidden;
 }
+/* SLIDESHOW SECTION */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
 
+/* SLIDES */
+.slide {
+  display: none;
+}
+
+/* IMAGE FIX */
+.slide img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover; /* keeps it neat & professional */
+}
+
+/* FADE ANIMATION */
+.fade {
+  animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0.4}
+  to {opacity: 1}
+}
 /* WRAPPER FIX */
 #page-wrapper {
   width:100%;
