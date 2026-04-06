@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elekko Agrovet</title>
+
+  <style>
+    /* ================= CONSULTATION SECTION ================= */
+
+  /* ================= CONSULTATION SECTION ================= */
+
+#consultation-wrapper {
+  padding: 60px 20px;
+  background: #f5f7fb;
+  display: flex;
+  justify-content: center;
+}
+
+.consultation-box {
+  background: #fff;
+  max-width: 600px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.consultation-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* TITLE */
+.consultation-box h2 {
+  color: #0b3d91;
+  margin-bottom: 10px;
+}
+
+/* TEXT */
+.consult-text {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* PRICE */
+.consult-price {
+  font-size: 32px;
+  color: #ff3c3c;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* NOTE */
+.consult-note {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* FEATURES */
+.consult-features {
+  text-align: left;
+  margin-bottom: 25px;
+  line-height: 1.8;
+  color: #333;
+}
+
+/* BUTTON */
+.consult-btn {
+  display: inline-block;
+  background: #25D366;
+  color: white;
+  padding: 15px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.consult-btn:hover {
+  background: #1ebe5d;
+  transform: translateY(-2px);
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+
+  #consultation-wrapper {
+    padding: 40px 15px;
+  }
+
+  .consultation-box {
+    padding: 20px;
+  }
+
+  .consultation-box h2 {
+    font-size: 22px;
+  }
+
+  .consult-price {
+    font-size: 26px;
+  }
+
+  .consult-btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 15px;
+  }
+
+  .consult-features {
+    font-size: 14px;
+  }
+}
+  </style>
+
+</head>
+
+<body>
+
+  <!-- CONSULTATION SECTION -->
+ <section id="consultation-wrapper">
+  <div class="consultation-box">
+
+    <h2>Professional Agrovet Consultation</h2>
+
+    <p class="consult-text">
+      Get expert advice on livestock, poultry, and crop health from our professionals.
+    </p>
+
+    <div class="consult-price">
+      ₦5,000
+    </div>
+
+    <p class="consult-note">
+      Payment required before consultation • Fast response within minutes
+    </p>
+
+    <div class="consult-features">
+      <p>✔ Livestock health guidance</p>
+      <p>✔ Poultry disease diagnosis</p>
+      <p>✔ Drug recommendations</p>
+      <p>✔ Trusted by farmers</p>
+    </div>
+
+    <a href="https://wa.me/234XXXXXXXXXX?text=Hello%20I%20want%20to%20pay%20and%20chat%20for%20consultation%20(₦5000).%20Please%20send%20payment%20details.%20I%20am%20ready."
+       target="_blank"
+       class="consult-btn">
+       💬 Pay & Chat on WhatsApp
+    </a>
+
+  </div>
+</section>
+
+</body>
+</html>
